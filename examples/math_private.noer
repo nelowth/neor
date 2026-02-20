@@ -1,0 +1,9 @@
+main() {
+  let base = 10;
+  let factor = 2;
+  let total = base + factor * 3;
+  private let token = "secure-123";
+  private let _backup = token;
+  print(total);
+  print("secure path");
+}

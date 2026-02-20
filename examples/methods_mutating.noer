@@ -1,0 +1,15 @@
+struct Counter {
+  value: int,
+}
+impl Counter {
+  fn inc_by(&mut self, by: int) -> int {
+    self.value = self.value + by;
+    return self.value;
+  }
+}
+main() {
+  let mut counter = Counter { value: 1 };
+  let now = counter.inc_by(4);
+  print(now);
+  print(counter.value);
+}

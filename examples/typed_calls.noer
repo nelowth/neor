@@ -1,0 +1,18 @@
+struct Counter {
+  value: int,
+}
+impl Counter {
+  fn create(initial: int) -> Counter {
+    return Counter { value: initial };
+  }
+  fn inc(&mut self) {
+    self.value = self.value + 1;
+  }
+}
+main() {
+  let mut counter: Counter = Counter::create(0);
+  counter.inc();
+  counter.inc();
+  let value: int = counter.value;
+  print(value);
+}

@@ -1,0 +1,17 @@
+struct User {
+  name: string,
+  score: int,
+}
+impl User {
+  fn new(name: string, score: int) -> User {
+    return User { name: name, score: score };
+  }
+  fn approved(&self, min: int) -> bool {
+    return self.score >= min;
+  }
+}
+main() {
+  let user = User::new("Lia", 9);
+  print(user.name);
+  print(user.approved(7));
+}

@@ -1,0 +1,13 @@
+fn show(v: &string) {
+  print(v);
+}
+
+main() {
+  let name = "ana";
+  let mut run = true;
+  while (run) {
+    show(&name);
+    run = false;
+  }
+  print(name);
+}

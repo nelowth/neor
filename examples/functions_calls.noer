@@ -1,0 +1,15 @@
+fn sum(a: int, b: int) -> int {
+  return a + b;
+}
+fn classify(score: int) -> string {
+  if (score >= 7) {
+    return "approved";
+  }
+  return "rejected";
+}
+main() {
+  let total = sum(10, 32);
+  print(total);
+  let status = classify(9);
+  print(status);
+}

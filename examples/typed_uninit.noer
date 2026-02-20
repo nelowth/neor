@@ -1,0 +1,8 @@
+main() {
+  let x: int;
+  x = 41;
+  let mut y: int;
+  y = x + 1;
+  y = y + 1;
+  print(y);
+}

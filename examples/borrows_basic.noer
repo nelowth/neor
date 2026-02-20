@@ -1,0 +1,27 @@
+fn read(v: &int) -> int {
+  return *v;
+}
+
+fn touch(v: &mut int) -> int {
+  return *v;
+}
+
+main() {
+  let mut x = 7;
+  if (true) {
+    let r = &x;
+    let from_r = *r;
+    print(from_r);
+  }
+  let a = read(&x);
+  let b = touch(&mut x);
+  let mut y = 9;
+  let mut rmut = &mut x;
+  let first_mut_ref = *rmut;
+  rmut = &mut y;
+  let from_mut_ref = *rmut;
+  print(a);
+  print(b);
+  print(first_mut_ref);
+  print(from_mut_ref);
+}

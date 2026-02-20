@@ -1,0 +1,16 @@
+struct User {
+  name: string,
+  score: int,
+}
+impl User {
+  fn approved_at_least(&self, min: int) -> bool {
+    return self.score >= min;
+  }
+}
+main() {
+  let user = User { name: "Lia", score: 9 };
+  let ok_7 = user.approved_at_least(7);
+  let ok_10 = user.approved_at_least(10);
+  print(ok_7);
+  print(ok_10);
+}

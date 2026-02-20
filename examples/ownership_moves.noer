@@ -1,0 +1,17 @@
+struct User {
+  id: int,
+}
+
+fn consume(user: User) -> int {
+  return user.id;
+}
+
+main() {
+  let name = "Lia";
+  print(name);
+  print(name);
+
+  let user = User { id: 7 };
+  let id = consume(user);
+  print(id);
+}

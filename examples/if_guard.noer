@@ -1,0 +1,9 @@
+main() {
+  let score = 9;
+  let approved = score >= 7 && true;
+  if (approved) {
+    print("approved");
+    } else {
+      print("rejected");
+    }
+  }

@@ -1,0 +1,17 @@
+struct User {
+  id: int,
+  name: string,
+  score: int,
+}
+fn classify(user: User) -> string {
+  if (user.score >= 7) {
+    return "approved";
+  }
+  return "rejected";
+}
+main() {
+  let user = User { id: 7, name: "Lia", score: 9 };
+  print(user.id);
+  let status = classify(user);
+  print(status);
+}
